@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a non-glamorous component with theme 1`] = `
+<text
+  style="font-size:10px;"
+/>
+`;
+
+exports[`with theme prop of fontSize 10 1`] = `
+<Parent>
+  <ThemeProvider
+    theme={
+      Object {
+        "fontSize": 10,
+      }
+    }
+  >
+    <ThemedComponent>
+      <Component
+        theme={
+          Object {
+            "fontSize": 10,
+          }
+        }
+      >
+        <glamorous.Text
+          style={
+            Object {
+              "fontSize": 10,
+            }
+          }
+        >
+          <TEXT
+            style={
+              Object {
+                "fontSize": 10,
+              }
+            }
+          />
+        </glamorous.Text>
+      </Component>
+    </ThemedComponent>
+  </ThemeProvider>
+</Parent>
+`;
+
+exports[`with theme prop of fontSize 10 2`] = `
+<Parent>
+  <ThemeProvider
+    theme={
+      Object {
+        "fontSize": 10,
+      }
+    }
+  >
+    <ThemedComponent>
+      <Child
+        theme={
+          Object {
+            "fontSize": 10,
+          }
+        }
+      >
+        <glamorous.Text
+          style={
+            Object {
+              "fontSize": 10,
+            }
+          }
+        >
+          <TEXT
+            style={
+              Object {
+                "fontSize": 10,
+              }
+            }
+          />
+        </glamorous.Text>
+      </Child>
+    </ThemedComponent>
+  </ThemeProvider>
+</Parent>
+`;
+
+exports[`with theme prop of fontSize 20 1`] = `
+<Parent>
+  <ThemeProvider
+    theme={
+      Object {
+        "fontSize": 20,
+      }
+    }
+  >
+    <ThemedComponent>
+      <Component
+        theme={
+          Object {
+            "fontSize": 20,
+          }
+        }
+      >
+        <glamorous.Text
+          style={
+            Object {
+              "fontSize": 20,
+            }
+          }
+        >
+          <TEXT
+            style={
+              Object {
+                "fontSize": 20,
+              }
+            }
+          />
+        </glamorous.Text>
+      </Component>
+    </ThemedComponent>
+  </ThemeProvider>
+</Parent>
+`;

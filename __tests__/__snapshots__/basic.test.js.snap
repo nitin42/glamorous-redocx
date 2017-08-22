@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sanity test 1`] = `
+<TEXT
+  style={
+    Object {
+      "color": "red",
+    }
+  }
+>
+  Hello World
+</TEXT>
+`;
+
+exports[`should render a component with theme properties 1`] = `
+<text
+  style="color:red;font-size:20px;"
+/>
+`;
+
+exports[`should render the <Image /> component 1`] = `
+<glamorous(IMAGE)
+  src="./redocx.png"
+/>
+`;
+
+exports[`supports props as style properties 1`] = `
+<TEXT
+  color="pink"
+  style={
+    Object {
+      "color": "pink",
+    }
+  }
+>
+  Hello World
+</TEXT>
+`;
+
+exports[`with theme prop of size 10 1`] = `
+<glamorous(TEXT)
+  theme={
+    Object {
+      "size": 10,
+    }
+  }
+>
+  <TEXT
+    style={
+      Object {
+        "color": "red",
+        "fontSize": 10,
+      }
+    }
+    theme={
+      Object {
+        "size": 10,
+      }
+    }
+  />
+</glamorous(TEXT)>
+`;
+
+exports[`with theme prop of size 20 1`] = `
+<glamorous(TEXT)
+  theme={
+    Object {
+      "padding": 20,
+    }
+  }
+>
+  <TEXT
+    style={
+      Object {
+        "color": "red",
+        "fontSize": undefined,
+      }
+    }
+    theme={
+      Object {
+        "padding": 20,
+      }
+    }
+  />
+</glamorous(TEXT)>
+`;

@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`merges nested themes 1`] = `
+<glamorous.Document>
+  <DOCUMENT
+    style={Object {}}
+  >
+    <ThemeProvider
+      theme={
+        Object {
+          "bold": true,
+          "fontSize": 10,
+        }
+      }
+    >
+      <glamorous.Document>
+        <DOCUMENT
+          style={Object {}}
+        >
+          <glamorous(TEXT)>
+            <TEXT
+              style={
+                Object {
+                  "bold": true,
+                  "fontSize": 10,
+                }
+              }
+            />
+          </glamorous(TEXT)>
+          <ThemeProvider
+            theme={
+              Object {
+                "fontSize": 20,
+              }
+            }
+          >
+            <glamorous(TEXT)>
+              <TEXT
+                style={
+                  Object {
+                    "bold": true,
+                    "fontSize": 20,
+                  }
+                }
+              />
+            </glamorous(TEXT)>
+          </ThemeProvider>
+        </DOCUMENT>
+      </glamorous.Document>
+    </ThemeProvider>
+  </DOCUMENT>
+</glamorous.Document>
+`;
+
+exports[`renders a component with theme 1`] = `
+<text
+  style="font-size:40px;color:red;"
+/>
+`;
+
+exports[`renders if children are null 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "fontSize": 10,
+    }
+  }
+/>
+`;
+
+exports[`with theme prop of fontSize 10 1`] = `
+<Parent>
+  <ThemeProvider
+    theme={
+      Object {
+        "fontSize": 10,
+      }
+    }
+  >
+    <glamorous(TEXT)>
+      <TEXT
+        style={
+          Object {
+            "color": "red",
+            "fontSize": 10,
+          }
+        }
+      />
+    </glamorous(TEXT)>
+  </ThemeProvider>
+</Parent>
+`;
+
+exports[`with theme prop of fontSize 20 1`] = `
+<Parent>
+  <ThemeProvider
+    theme={
+      Object {
+        "fontSize": 20,
+      }
+    }
+  >
+    <glamorous(TEXT)>
+      <TEXT
+        style={
+          Object {
+            "color": "red",
+            "fontSize": 20,
+          }
+        }
+      />
+    </glamorous(TEXT)>
+  </ThemeProvider>
+</Parent>
+`;
+
+exports[`with theme prop of fontSize 20 2`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "fontSize": 20,
+    }
+  }
+/>
+`;
+
+exports[`with theme prop of fontSize 20 3`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "fontSize": 20,
+    }
+  }
+/>
+`;

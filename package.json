@@ -1,0 +1,58 @@
+{
+  "name": "glamorous-redocx",
+  "version": "1.0.0",
+  "description": "style and render glamorous components to word documents",
+  "main": "lib/index.js",
+  "author": "Nitin Tulswani",
+  "license": "MIT",
+  "dependencies": {
+    "brcast": "^3.0.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-app": "^3.0.2",
+    "babel-preset-stage-0": "^6.24.1",
+    "enzyme": "^2.9.1",
+    "enzyme-to-json": "^1.5.1",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0",
+    "jest": "^20.0.4",
+    "jest-glamor-react": "^3.1.0",
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1",
+    "redocx": "1.0.3-beta1"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test:watch": "jest --watch __tests__",
+    "test": "jest __tests__",
+    "example": "babel-node demo/App.js",
+    "build": "babel src -d lib",
+    "lint": "./node_modules/.bin/eslint src"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  }
+}

@@ -8,8 +8,11 @@
   "dependencies": {
     "brcast": "^3.0.1",
     "prop-types": "^15.5.10",
-    "react": "^15.6.1",
+    "scribbletune": "^0.10.1",
     "underscore": "^1.8.3"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

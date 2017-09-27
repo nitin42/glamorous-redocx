@@ -6,10 +6,7 @@
   "author": "Nitin Tulswani",
   "license": "MIT",
   "dependencies": {
-    "brcast": "^3.0.1",
-    "prop-types": "^15.5.10",
-    "scribbletune": "^0.10.1",
-    "underscore": "^1.8.3"
+    "brcast": "^3.0.1"
   },
   "peerDependencies": {
     "react": "^16.0.0"
@@ -17,6 +14,7 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
+    "prop-types": "^15.5.10",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-react-app": "^3.0.2",
